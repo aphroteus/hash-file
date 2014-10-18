@@ -306,7 +306,7 @@ public class HashFileView extends JFrame {
             File file = new File(fd.getDirectory() + fd.getFile());
             filePathFld.setText(file.getAbsolutePath());
 
-            Hash hash = new Hash(file);
+            final Hash hash = new Hash(file);
 
             new Thread(new Runnable() {
                 public void run() {
